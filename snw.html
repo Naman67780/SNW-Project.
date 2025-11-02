@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium Web:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            height: 500vh;
+            background-color: black;
+        }
+        #div1{
+            height: 100vh;
+            width: 100%;
+            
+        }
+        #div1 h1{
+            font-family: "Orbitron", sans-serif;
+            color: white;
+            text-align: center;
+        }
+        #div1 h3{
+            color: white;
+             font-family: "Exo 2", sans-serif;
+             text-align: center;
+        }
+        #idiv{
+            height: 180px;
+            width: 90%;
+            
+            margin: auto;
+        }
+        #idiv p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            
+            
+        }
+
+        
+        #idiv2{
+            width: 90%;
+            height: 275px;
+            
+            margin: auto;
+            
+        }
+        #idiv2 h2{
+            color: white;
+            font-family: "Orbitron", sans-serif;
+            text-align: center;
+        }
+        #idiv2 div{
+            height: 190px;
+            width: 200px;
+            
+            display: inline-block;
+        }
+        #idiv2 div+div{
+            height: 190px;
+            width: 550px;
+            
+            display: inline-block;
+            margin-left: 1px;
+            padding: 2px;
+            padding-top: 1px;
+            
+        }
+        #idiv2 div img{
+            height: 190px;
+            width: 200px;
+            
+
+        }
+        #idiv2 div+div p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 15px;
+        }
+        #div1 #idiv2:hover{
+            box-shadow: rgba(255, 255, 255, 1) 0px 3px 8px;
+        }
+        #div2{
+            height: 160vh;
+            width: 100%;
+            
+            margin-top: 10px;
+            
+            
+        }
+        #div2{
+            position: relative;
+        }
+        #div2::before{
+            background-image: url(./pexels-pixabay-2166.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            
+            
+        }
+        h2{
+            color: white;
+            text-align: center;
+            font-family: "Orbitron", sans-serif;
+        }
+        #div2 #idiv2{
+            height: 120px;
+            width: 90%;
+            margin: auto;
+            
+            margin-top: 1px;
+            
+            
+        }
+        #div2 #idiv2 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 15px;
+
+        }
+        #div2 #idiv3{
+            width: 90%;
+            height: 100px;
+            border: 0.5px solid white;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #div2 #idiv3 h4{
+            color: white;
+            font-family: "Exo 2", sans-serif;
+        }
+        #div2 #idiv3 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 10px;
+            padding-top: 0px;
+        }
+        #div2 #idiv4{
+            width: 90%;
+            height: 100px;
+            border: 0.5px solid white;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        h4{
+            color: white;
+            font-family: "Exo 2", sans-serif;
+        }
+        #div2 #idiv4 p{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        #div2 #idiv5{
+            width: 90%;
+            height: 110px;
+            border: 0.5px solid white;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #div2 #idiv5 p{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        #div2 #idiv6{
+            width: 90%;
+            height: 110px;
+            border: 0.5px solid white;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #div2 #idiv6 p{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        #div2 #idiv7{
+            width: 90%;
+            height: 110px;
+            border: 0.5px solid white;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        #div2 #idiv7 p{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 10px;
+            color: white;
+        }
+        h5{
+            color: white;
+            font-family: "Exo 2", sans-serif;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        #div2 #idiv8{
+            width: 90%;
+            height: 80px;
+            border: 0.5px solid grey;
+            margin: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding-top: 0px;
+            
+        }
+        #div2 #idiv8 p{
+            font-family: "Titillium Web", sans-serif;
+            font-size: 9px;
+            color: rgb(255, 255, 255);
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        #div3{
+            width: 100%;
+            height: 115vh;
+            
+        }
+       #div3 #idiv2{
+        height: 220px;
+        width: 90%;
+        margin: auto;
+       }
+       #div3 #idiv3{
+        height: 210px;
+        width: 200px;
+        padding-top: 7px;
+       }
+       #div3 #idiv4{
+        height: 190px;
+        width: 550px;
+        
+
+       }
+       #div3 #idiv4 p{
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 17px;
+        
+       }
+       #div3 #idiv5{
+        width: 99.3%;
+        height: 300px;
+        margin: auto;
+        margin-top: 10px;
+       } 
+       #div3 #idiv5 a{
+        text-decoration: none;
+        color: white;
+        font-family: "Orbitron", sans-serif;
+       
+       }
+       #div3 #idiv5 p{
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+        font-size: 14px;
+        margin-top: 0.5px;
+    
+    }
+        a:hover{
+            box-shadow: rgba(255, 255, 255, 1) 0px 3px 8px;
+        }
+        #div4{
+            width: 100%;
+            height: 140vh;
+            
+        }
+        #div4{
+            position: relative;
+
+        }
+        #div4::before{
+            background-image: url(./mars.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+        }
+        #div4 #idiv2{
+            width: 90%;
+            height: 90px;
+            
+            margin: auto;
+        }
+        #div4 #idiv2 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 14px;
+            margin-top: 1px;
+        }
+        #div4 #idiv3{
+            width: 90%;
+            height: 160px;
+            
+            margin: auto;
+            margin-top: 10px;
+        }
+        #div4 #idiv3 #idiv4{
+            width: 170px;
+            height: 150px;
+            
+            display: inline-block;
+        }
+        #div4 #idiv3 #idiv5{
+            width: 570px;
+            height: 150px;
+            
+            display: inline-block;
+            margin-top: 1px;
+            padding-top: 0px;
+        }
+        #div4 #idiv3 #idiv4 img{
+            width: 170px;
+            height: 150px;
+        }
+        #div4 #idiv3 #idiv5 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 15px;
+           
+        }
+        #div4 #idiv6{
+            width: 90%;
+            height: 195px;
+            
+            margin: auto;
+            margin-top: 10px;
+        }
+        #div4 #idiv6 #idiv7{
+            width: 170px;
+            height: 190px;
+            
+            display: inline-block;
+        }
+        #div4 #idiv6 #idiv8{
+            width: 570px;
+            height: 190px;
+            
+            display: inline-block;
+            margin-top: 1px;
+            padding-top: 0px;
+        }
+        #div4 #idiv6 #idiv7 img{
+            width: 170px;
+            height: 190px;
+        }
+        #div4 #idiv6 #idiv8 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 15px;
+        }
+        #div4 #idiv9{
+            width: 90%;
+            height: 158px;
+            
+            margin: auto;
+            margin-top: 10px;
+        }
+        #div4 #idiv9 #idiv10{
+            width: 170px;
+            height: 150px;
+            
+            display: inline-block;
+        }
+        #div4 #idiv9 #idiv11{
+            width: 570px;
+            height: 150px;
+            
+            display: inline-block;
+            margin-top: 1px;
+            padding-top: 0px;
+        }
+        #div4 #idiv9 #idiv10 img{
+            width: 170px;
+            height: 150px;
+        }
+        #div4 #idiv9 #idiv11 p{
+            color: white;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 16.3px;
+            
+        }
+        #div5{
+            height: 100vh;
+            width: 100%;
+            border: 2px solid white;
+
+            
+        }
+        #div5 #idiv12{
+            width: 90%;
+            height: 450px;
+            margin: auto;
+            border: 2px solid white;
+            
+        }
+        #div5 #idiv12 #d2{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: 40px;
+        }
+        #div5 #idiv12 #d3{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: 40px;
+        }
+        #div5 #idiv12 #d4{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: 40px;
+        }
+        #div5 #idiv12 #d5{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: 100px;
+            margin-top: 20px;
+
+        }
+        #div5 #idiv12 #d6{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            margin-left: 100px;
+            margin-top: 20px;
+
+
+        }
+        #div5 h4{
+            font-size: 8px;
+        }
+        
+
+       
+        
+       
+        
+        
+       
+
+        
+
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+    <h1>SPACE TRAVEL HISTORY</h1>
+    <div id="idiv">
+        <p>Space travel marks one of humanity’s greatest adventures — the journey beyond our own planet to explore the vast unknown of the universe. What began as a dream took flight in the mid-20th century, when the first rockets broke free from Earth’s gravity. From launching simple satellites like Sputnik to landing humans on the Moon and exploring distant planets, the story of space travel is a tale of innovation, courage, and curiosity. Each mission has expanded our understanding of the cosmos and brought us closer to answering one timeless question — what lies beyond the stars?</p>
+        
+    </div>
+    <div id="idiv2">
+        <h2>What is Space travel?</h2>
+        <div>
+            <img src="./pexels-pixabay-2166.jpg" alt="space">
+        </div>
+        <div>
+            <p>Space travel is the act of journeying beyond Earth’s atmosphere into outer space using spacecraft or rockets. It allows humans and machines to explore the Moon, planets, and the vast universe that surrounds our planet. Space travel combines science, engineering, and imagination — making it possible to study distant worlds, understand how the universe works, and even dream of living beyond Earth. From launching satellites that orbit our planet to sending astronauts to the International Space Station and probes to Mars, space travel represents humanity’s endless curiosity and desire to explore the unknown.</p>
+        </div>
+    </div>
+    </div>
+    <div id="div2">
+        <div id="idiv1">
+            <h2>The Space Race</h2>
+        </div>
+        <div id="idiv2">
+            <p>The Space Race was a fierce competition between the United States and the Soviet Union (USSR) during the Cold War, lasting from the late 1950s to the early 1970s. It wasn’t just about science — it was a battle of pride, power, and technological superiority. Both nations wanted to prove their dominance by achieving the greatest milestones in space exploration before the other.</p>
+            
+        </div>
+        <div id="idiv3">
+            <h4>1. The Beginning (1957 - Sputnik Shock)</h4>
+            <p>The race officially began on October 4, 1957, when the Soviet Union launched Sputnik 1, the first artificial satellite to orbit Earth. This small, beeping sphere sent shockwaves around the world. The U.S. was surprised and worried — it meant the USSR had advanced rocket technology capable of reaching space, and potentially, anywhere on Earth.</p>
+        </div>
+        <div id="idiv4">
+            <h4>2. First Human Achievements (1961–1963)</h4>
+            <p>The Soviets continued their success when Yuri Gagarin became the first human in space on April 12, 1961, aboard Vostok 1. Just two years later, Valentina Tereshkova became the first woman in space in 1963.</p>
+        </div>
+        <div id="idiv5">
+            <h4>3. The Race to the Moon (1960s)</h4>
+            <p>n 1961, U.S. President John F. Kennedy announced a bold goal:
+“We choose to go to the Moon before this decade is out.”
+
+This declaration turned the Space Race into a moon race.
+
+The Soviet Union achieved several firsts — the first human spacewalk by Alexei Leonov (1965), and the first spacecraft to impact the Moon.
+
+The U.S. made rapid progress with the Apollo program, which developed powerful Saturn V rockets and advanced spacecraft systems.</p>
+        </div>
+        <div id="idiv6">
+            <h4>4. The U.S. Victory – Apollo 11 (1969)</h4>
+            <p>On July 20, 1969, the world watched as NASA’s Apollo 11 mission successfully landed astronauts Neil Armstrong and Buzz Aldrin on the Moon. Armstrong’s famous words —
+“That’s one small step for man, one giant leap for mankind.”
+— marked the peak of the Space Race and a defining moment in human history.
+
+The U.S. had achieved Kennedy’s dream and effectively won the race to the Moon.</p>
+        </div>
+        <div id="idiv7">
+            <h4>5. Legacy of the Space Race</h4>
+            <p>Though the Space Race began as a rivalry, it led to some of humanity’s greatest technological advancements — including satellite communication, computer development, and modern rocket science.
+
+It also inspired global cooperation in later years, paving the way for projects like the International Space Station (ISS), where countries now work together to explore the cosmos.</p>
+        </div>
+        <div id="idiv8">
+            <h5>Fun Fact:</h5>
+            <p>After the Space Race ended, the U.S. and USSR (later Russia) began working together in space. The Apollo–Soyuz Test Project (1975) was the first joint mission, symbolizing peace and partnership after years of competition.</p>
+        </div>
+    </div>
+    <div id="div3">
+        <h2>Moon Exploration Era</h2>
+        <div id="idiv2">
+            <div id="idiv3">
+                <img src="./moon.avif" alt="moon">
+            </div>
+            <div id="idiv4">
+                <p>The Moon Exploration Era marked a turning point in human history — it was the moment when humans first set foot on another world. After years of competition during the Space Race, both the United States and the Soviet Union focused on reaching and studying Earth’s only natural satellite — the Moon. This era, from the late 1950s to the 1970s, changed our understanding of the Moon and proved that space travel beyond Earth was truly possible.</p>
+                
+            </div>
+            <div id="idiv5">
+                <a href="https://en.wikipedia.org/wiki/Luna_2" target="_blank">1. Luna 2</a><br><br>
+                <a href="https://en.wikipedia.org/wiki/Apollo_program" target="_blank">2. The Apollo Program (1961–1972)</a><br><br>
+                <a href="https://en.wikipedia.org/wiki/Soviet_crewed_lunar_programs">3. The Soviet Lunar Missions</a><br><br>
+                <p>The last Apollo mission, Apollo 17, took place in December 1972, marking the end of the Moon Exploration Era. Since then, no human has returned to the Moon — but robotic missions have continued.
+
+Today, space agencies and private companies (like NASA’s Artemis Program, SpaceX, and ISRO) are preparing to send humans back to the Moon in the coming years, aiming to build permanent lunar bases for future exploration of Mars and beyond.</p>
+                <p>The Moon Exploration Era remains one of the greatest achievements in human history. It proved that with courage, science, and teamwork, humankind can reach worlds beyond our own — inspiring generations to keep looking up at the night sky with wonder and ambition.</p>
+            </div>
+        </div>
+    </div>
+    <div id="div4">
+        <h2>Exploration of the Solar System</h2>
+        <div id="idiv2">
+            <p>After the success of Moon missions, humanity set its sights even farther — toward the planets, moons, and asteroids of our Solar System. This era of exploration began in the 1960s and continues even today, using powerful space probes, rovers, and orbiters to uncover the mysteries of worlds billions of kilometers away.
+
+
+These robotic explorers have revealed the secrets of Mars, Jupiter, Saturn, and even the distant edges of the Solar System.</p>
+
+        </div>
+        <div id="idiv3">
+            <div id="idiv4">
+                <img src="./mariner 2.jpg" alt="mariner">
+            </div>
+            <div id="idiv5">
+                <p>The first missions to leave Earth’s orbit were sent in the 1960s and 1970s, led by NASA and the Soviet space agency.
+
+Mariner 2 (1962): First successful mission to another planet — it flew past Venus and measured its scorching surface temperature.
+
+Mariner 4 (1965): Sent back the first close-up images of Mars, revealing a cold, cratered world.
+
+Venera missions (1961–1983): Soviet probes that explored Venus, with Venera 7 (1970) becoming the first spacecraft to land on another planet and transmit data back to Earth.</p>
+            </div>
+
+        </div>
+        <div id="idiv6">
+            <div id="idiv7">
+                <img src="./viking.jpg" alt="viking">
+            </div>
+            <div id="idiv8">
+                <p>Mars has always fascinated humans because it’s the planet most like Earth. Since the 1970s, several missions have explored it:
+
+Viking 1 & 2 (1976): The first successful landers on Mars, performing experiments to search for signs of life.
+
+Pathfinder & Sojourner Rover (1997): Proved that robotic exploration on Mars was possible.
+
+Spirit & Opportunity Rovers (2004): Discovered evidence that liquid water once existed on Mars.
+
+Curiosity Rover (2012) and Perseverance Rover (2021): Continue exploring Mars’s surface, studying rocks, soil, and the planet’s atmosphere to prepare for future human missions.</p>
+            </div>
+
+        </div>
+        <div id="idiv9">
+            <div id="idiv10">
+                <img src="./asteroid.jpg" alt="asteroid">
+            </div>
+            <div id="idiv11">
+                <p>Scientists also sent missions to smaller bodies to learn about the origins of the Solar System:
+
+NEAR Shoemaker (2000): First mission to orbit and land on an asteroid.
+
+Rosetta (2014): First spacecraft to orbit a comet (67P/Churyumov–Gerasimenko) and land the Philae probe on its surface.
+
+OSIRIS-REx (2020): Collected samples from the asteroid Bennu and returned them to Earth in 2023.</p>
+            </div>
+
+        </div>
+        <h4>Naman Saini</h4>
+        <h4>Turing Batch</h4>
+    </div>
+   
+
+</body>
+</html>
